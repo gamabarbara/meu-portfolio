@@ -28,6 +28,7 @@ body {
   outline: none;
   text-decoration: none;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 ::before,
@@ -187,11 +188,6 @@ ul {
   position: relative;
 }
 
-* {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
-}
-
 .aside .logo a span {
   font-family: 'Montserrat', sans-serif;
   font-size: 40px;
@@ -320,12 +316,13 @@ h3.hello {
 h3.hello span {
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
-  font-weight: bold;
+  font-weight: 700;
   color: var(--skin-color);
 }
 
 h3.my-profession {
   font-size: 30px;
+
   margin: 15px 0;
 }
 .typing {
