@@ -577,7 +577,7 @@
                 <p>+55 11 94708 - 8648</p>
               </div>
               <div class="contact-info-item padd-15">
-                <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+                <div class="icon"><i class=" fa fa-brands fa-linkedin"></i></div>
                 <h4>Linkedin</h4>
                 <a href="https://www.linkedin.com/in/gama-barbara/">https://www.linkedin.com/in/gama-barbara/</a>
               </div>
@@ -587,7 +587,7 @@
                 <p>barbara.cp@outlook.com</p>
               </div>
               <div class="contact-info-item padd-15">
-                <div class="icon"><i class="fa fa-globe-europe"></i></div>
+                <div class="icon"><i class="fa fa-brands fa-github"></i></div>
                 <h4>GitHub</h4>
                 <a href="https://github.com/gamabarbara">https://github.com/gamabarbara</a>
               </div>
@@ -597,7 +597,7 @@
             <h4 class="contact-sub-title padd-15">
               Farei o possível para sanar suas dúvidas.
             </h4>
-            <div class="row">
+            <form class="row" action="https://formsubmit.co/barbara.cp0801@gmail.com" method="POST">
               <div class="contact-form padd-15">
                 <div class="row">
                   <div class="form-item col-6 padd-15">
@@ -606,6 +606,8 @@
                         type="text"
                         class="form-control"
                         placeholder="Nome"
+                        name="name"
+                        required
                       />
                     </div>
                   </div>
@@ -615,6 +617,8 @@
                         type="email"
                         class="form-control"
                         placeholder="Email"
+                        name="email"
+                        required
                       />
                     </div>
                   </div>
@@ -626,6 +630,8 @@
                         type="text"
                         class="form-control"
                         placeholder="Assunto"
+                        name="subject"
+                        required
                       />
                     </div>
                   </div>
@@ -636,17 +642,19 @@
                       <textarea
                         class="form-control"
                         placeholder="Mensagem"
+                        name="message"
+                        required
                       ></textarea>
                     </div>
                   </div>
                 </div>
                 <div class="row">
                   <div class="form-item col-12 padd-15">
-                    <button type="submit" class="btn">Enviar Mensagem</button>
+                    <button type="submit" class="btn" id="btn">Enviar Mensagem</button>
                   </div>
                 </div>
               </div>
-            </div>
+            </form>
           </div>
         </section>
       </div>
@@ -667,6 +675,7 @@
         <span class="color-5" onclick="setActiveStyle('color-5')"></span>
       </div>
     </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <script src="style-switcher.js"></script>
     <script src="script.js"></script>
