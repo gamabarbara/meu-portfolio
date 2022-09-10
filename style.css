@@ -36,9 +36,9 @@ body {
   box-sizing: border-box;
 }
 
-ul {
+/* ul {
   list-style: none;
-}
+} */
 
 .section {
   background: var(--bg-black-900);
@@ -378,10 +378,13 @@ h3.my-profession {
   max-width: 100%;
 }
 
-.about .about-content .about-texth3 {
+.about .about-content .about-text h3 {
   font-size: 24px;
   margin-bottom: 15px;
-  font-weight: var(--text-black-900);
+  color: var(--text-black-900);
+}
+.about .about-content .about-text p {
+  color: var(--text-black-900);
 }
 
 .about .about-content .about-text h3 span {
@@ -391,7 +394,7 @@ h3.my-profession {
 .about .about-content .about-text h3 p {
   font-size: 16px;
   line-height: 25px;
-  color: var(--text-black-700);
+  color: var(--text-black-900);
 }
 
 .about .about-content .personal-info {
@@ -549,7 +552,9 @@ h3.my-profession {
   text-align: justify;
   color: var(--text-black-700);
 }
-
+.description {
+  color: var(--text-black-700);
+}
 .service .container {
   padding-bottom: 40px;
 }
@@ -566,6 +571,7 @@ h3.my-profession {
   padding: 30px 15px;
   text-align: center;
   transition: all 0.35s ease;
+  height: 450px;
 }
 
 .service .service-item .service-item-inner:hover {
@@ -618,7 +624,8 @@ h3.my-profession {
 }
 .portfolio .portfolio-heading h2 {
   color: var(--text-black-900);
-  font-weight: 500;
+  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
 }
 .portfolio .portfolio-item {
   flex: 0 0 33.33%;
@@ -631,10 +638,31 @@ h3.my-profession {
   overflow: hidden;
   cursor: pointer;
 }
+
+.portfolio .portfolio-item-inner:hover {
+  box-shadow: 10px 10px 10px rgba(4, 4, 6, 0.15);
+}
+
+
 .portfolio .portfolio-item-inner .portfolio-img img {
   width: 100%;
   display: block;
+  
 }
+.portfolio .portfolio-item-inner .portfolio-img h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0 5px 0;
+  color: var(--text-black-700);
+}
+.portfolio .portfolio-item-inner .portfolio-img p {
+  padding-left: 15px;
+  padding-right: 1px;
+  color: var(--text-black-700);
+}
+
+
 
 .contact-title {
     color: var(--skin-color);
